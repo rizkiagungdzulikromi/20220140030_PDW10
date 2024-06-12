@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Peminatan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran Peminatan</h1>
+        <div id="notification" class="notification"></div>
+        <form id="registrationForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+            <label for="peminatan">Peminatan:</label>
+            <select id="peminatan" name="peminatan" required>
+                <option value="programming">Programming</option>
+                <option value="desain">Desain</option>
+                <option value="jaringan">Jaringan</option>
+                <option value="data">Data</option>
+            </select>
+
+            <label for="tanggal">Tanggal:</label>
+            <input type="text" id="tanggal" name="tanggal" readonly>
+
+            <label for="angkatan">Angkatan:</label>
+            <select id="angkatan" name="angkatan" required>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
